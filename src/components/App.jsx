@@ -1,5 +1,6 @@
 import "../styles/App.css";
 import { useState, useEffect } from "react";
+import Game from "./Game.jsx";
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -45,7 +46,9 @@ function App() {
           once!
         </p>
       </header>
-      <main></main>
+      <main>
+        <Game pokemonData={pokemonData} />
+      </main>
       <footer>
         <p>&copy; 2026 Memory Card Game. All rights reserved.</p>
       </footer>
