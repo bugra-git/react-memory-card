@@ -10,7 +10,7 @@ The objective is simple: click each Pokémon only once. Every successful click i
 
 ## Screenshot
 
-Add a screenshot or GIF here once deployed.
+![Gameplay Screenshot](src/assets/react-memory-card-inky.vercel.app_.png)
 
 ## Features
 
