@@ -1,0 +1,140 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    justify-items: center;
+}
+
+.card img {
+    place-self: stretch;
+    max-height: 25vh;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+}   
+
+.types {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type {
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.normal {
+    background-color: #A8A77A;
+    color: white;
+}
+
+.fighting {
+    background-color: #C22E28;
+    color: white;
+}
+
+.flying {
+    background-color: #A98FF3;
+    color: var(--text-main);
+}
+
+.poison {
+    background-color: #A33EA1;
+    color: white;
+}
+
+.ground {
+    background-color: #E2BF65;
+    color: var(--text-main);
+}
+
+.rock {
+    background-color: #B6A136;
+    color: white;
+}
+
+.bug {
+    background-color: #A6B91A;
+    color: white;
+}
+
+.ghost {
+    background-color: #735797;
+    color: white;
+}
+
+.fire {
+    background-color: #EE8130;
+    color: white;
+}
+
+.water {
+    background-color: #6390F0;
+    color: white;
+}
+
+.grass {
+    background-color: #7AC74C;
+    color: white;
+}
+
+.electric {
+    background-color: #f7d02c;
+    color: var(--text-main);
+}
+
+.psychic {
+    background-color: #F95587;
+    color: white;
+}
+
+.ice {
+    background-color: #96D9D6;
+    color: var(--text-main);
+}
+
+.dragon {
+    background-color: #6F35FC;
+    color: white;
+}
+
+.fairy {
+    background-color: #EDB8E9;
+    color: var(--text-main);
+}
+
+.steel {
+    background-color: #B7B7CE;
+    color: var(--text-main);
+}
+
+.dark {
+    background-color: #705746;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card:active {
+    transform: translateY(0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
