@@ -44,11 +44,11 @@ function Game({ pokemonData }) {
 
   return (
     <>
-      <div>
+      <div className="scoreboard">
         <h2>Score: {score}</h2>
         <h2>High Score: {highScore}</h2>
       </div>
-      <div>
+      <div className="game-board">
         {deck.map((pokemon) => (
           <Card
             key={pokemon.id}

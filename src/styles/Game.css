@@ -1,0 +1,14 @@
+.scoreboard {
+  display: flex;
+  gap: 24px;
+}
+
+.scoreboard h2 {
+    color: var(--secondary-color);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
