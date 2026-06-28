@@ -46,7 +46,13 @@ function App() {
         </p>
       </header>
       <main>
-        {pokemonData.length > 0 && <Game pokemonData={pokemonData} />}
+        {pokemonData.length > 0 ? (
+          <Game pokemonData={pokemonData} />
+        ) : (
+          <div className="loading">
+            <p>Loading</p><span>.</span><span>.</span><span>.</span>
+          </div>
+        )}
       </main>
       <footer>
         <p>&copy; 2026 Memory Card Game. All rights reserved.</p>
