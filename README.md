@@ -6,7 +6,7 @@ The objective is simple: click each Pokémon only once. Every successful click i
 
 ## Live Demo
 
-[Live Demo](YOUR_DEPLOYMENT_LINK_HERE)
+[Live Demo](https://react-memory-card-inky.vercel.app/)
 
 ## Screenshot
 
