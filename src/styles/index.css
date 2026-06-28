@@ -1,11 +1,11 @@
 @font-face {
     font-family: pokemon-head;
-    src: url(src/assets/PokemonSolid.ttf) format("truetype");
+    src: url(../assets/PokemonSolid.ttf) format("truetype");
 }
 
 @font-face {
     font-family: pokemon-text;
-    src: url(src/assets/PokemonGb-RAeo.ttf) format("truetype");
+    src: url(../assets/PokemonGb-RAeo.ttf) format("truetype");
 }
 
 :root {
