@@ -1,3 +1,13 @@
+@font-face {
+    font-family: pokemon-head;
+    src: url(src/assets/PokemonSolid.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: pokemon-text;
+    src: url(src/assets/PokemonGb-RAeo.ttf) format("truetype");
+}
+
 :root {
   --primary-color: #ffcb05;
   --secondary-color: #3c5aa6;
@@ -6,7 +16,8 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: pokemon-text;
+  font-size: 0.72rem;
   background-color: var(--bg-app);
   color: var(--text-main);
 }
