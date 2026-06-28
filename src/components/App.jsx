@@ -42,12 +42,11 @@ function App() {
       <header>
         <h1>Memory Card Game</h1>
         <p>
-          Get points by clicking on an image but don't click on any more than
-          once!
+          Get points by clicking on an image but don't click on any more than once!
         </p>
       </header>
       <main>
-        <Game pokemonData={pokemonData} />
+        {pokemonData.length > 0 && <Game pokemonData={pokemonData} />}
       </main>
       <footer>
         <p>&copy; 2026 Memory Card Game. All rights reserved.</p>

@@ -16,7 +16,32 @@ function Game({ pokemonData }) {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [deck, setDeck] = useState(shuffle([...pokemonData]).slice(0, 12));
-  
+  const [clicked, setClicked] = useState([]);
+
+  function play(pokemonId) {
+    if (clicked.includes(pokemonId) || clicked.length === 11) {
+      setScore(0);
+      setClicked([]);
+      setDeck(shuffle([...pokemonData]).slice(0, 12));
+      if (clicked.length === 11) {
+        alert("Congratulations! You've won the game!");
+        if (highScore < 12) {
+          setHighScore(12);
+        }
+      } else {
+        alert("You clicked on the same Pokémon! Game over.");
+      }
+    } else {
+      const newScore = score + 1;
+      setScore(newScore);
+      setClicked([...clicked, pokemonId]);
+      setDeck(prevDeck => shuffle([...prevDeck]));
+      if (newScore > highScore) {
+        setHighScore(newScore);
+      }
+    }
+  }
+
   return (
     <>
       <div>
@@ -30,6 +55,7 @@ function Game({ pokemonData }) {
             name={pokemon.name}
             image={pokemon.image}
             types={pokemon.types}
+            onClick={() => play(pokemon.id)}
           />
         ))}
       </div>
