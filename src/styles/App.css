@@ -1,57 +1,62 @@
 #root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 16px;
-    background-color: #f0f0f0;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px;
+  background-color: #f0f0f0;
+  min-height: 100vh;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 2.4rem;
-    font-family: pokemon-head;
-    color: var(--primary-color);
-    text-shadow: 4px 4px 4px var(--secondary-color);
-    margin-bottom: 12px;
+  font-size: 2.4rem;
+  font-family: pokemon-head;
+  color: var(--primary-color);
+  text-shadow: 4px 4px 4px var(--secondary-color);
+  margin-bottom: 12px;
 }
 
 header p {
-    font-size: 1.2rem;
-    color: var(--text-main);
+  font-size: 1.2rem;
+  color: var(--text-main);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .loading {
-    display: flex;
-    font-size: 2rem;
+  display: flex;
+  font-size: 2rem;
+  font-family: pokemon-head;
+}
+
+.loading p {
+  margin-right: 8px;
 }
 
 .loading span {
-    opacity: 0.25;
+  opacity: 0.25;
 }
 
 .loading span:first-of-type {
-    animation: appear 1.8s ease infinite 0s
+  animation: appear 1.8s ease infinite 0s;
 }
 
 .loading span:nth-of-type(2) {
-    animation: appear 1.8s ease infinite 0.6s
+  animation: appear 1.8s ease infinite 0.6s;
 }
 
 .loading span:nth-of-type(3) {
-    animation: appear 1.8s ease infinite 1.2s
+  animation: appear 1.8s ease infinite 1.2s;
 }
 
 @keyframes appear {
